@@ -1,0 +1,78 @@
+.discovery-decription {
+    max-width: 68.1rem;
+}
+
+.discovery-lists {
+    padding-left: 7.5rem !important;
+    list-style-type: none;
+    border-left: 2px solid var(--color-seagray);
+}
+
+.discovery-lists .discovery-list {
+    margin-bottom: 5rem;
+    padding-left: 42px;
+    position: relative;
+}
+
+.discovery-lists .discovery-list::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #73c255;
+    background-image: url("../../../assets/images/icons/check.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discovery-lists .discovery-list:last-child {
+    margin-bottom: 0;
+}
+
+.discovery-session-img {
+    max-width: 27rem;
+    width: 27rem;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+.discovery-session-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.discovery-session-img-wrapper {
+    margin-right: 10rem;
+}
+
+@media (max-width:991px) {
+    .discovery-decription {
+        max-width: 100%;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .discovery-lists {
+        padding-left: 0 !important;
+        border-left: 0;
+    }
+
+    .discovery-session-img {
+        max-width: 300px;
+        width: 300px;
+        margin: 40px auto;
+    }
+
+}
+
+@media (max-width:767px) {}

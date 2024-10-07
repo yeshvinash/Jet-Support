@@ -1,0 +1,380 @@
+@import url("./utils.css");
+
+:root {
+  font-size: 10px;
+  --font-primary: "Lufga", sans-serif;
+  --color-accent: #6488f9;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-ice: #e7eaf2;
+  --color-darkgray: #5f6266;
+  --color-offwhite: #ffffffcc;
+  --color-offblack: #111111;
+  --color-offgray: #5e6266;
+  --color-seagray: #282828;
+  --color-deepblue: #081827;
+  --color-icewhite: #e8ebef;
+  --color-officewhite: #f0f0f0;
+  --color-icewhitedark: #d6dbe1;
+  --color-indigo: #171f3a;
+  --color-smudgewhite: #ffffff33;
+  --color-gray: #7b7b7b;
+  --color-blue: #3b56b6;
+  --color-darkblue: #182e85;
+  --color-offblue: #3b83b7;
+  --color-green: #568828;
+  --color-offgreen: #2ea16a;
+  --color-green-light: #73C255;
+  --color-orange: #d78305;
+  --color-offorange: #bd5f41;
+  --color-yellow: #ffc55c;
+  --color-cyan: #62d1d6;
+  --color-offcyan: #35b1b4;
+  --color-skyblue: #48aae1;
+  --color-violet: #6d5fd7;
+  --color-offviolet: #934dbb;
+  --header-height: 130px;
+  --color-darkwhite: #f3f5f7;
+  --color-white-shade1: #e7edf2;
+  --color-offred: #F06A6A;
+  /* --color-: #0b1827; */
+  --custom-gutter-x: -20px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-offgray);
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.header-spacing {
+  padding-top: var(--header-height);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: var(--color-deepblue);
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font-size: 9rem;
+}
+
+h2,
+.h2 {
+  font-size: 5.5rem;
+}
+
+h2.small,
+.h2.small {
+  font-size: 5rem;
+}
+
+h3,
+.h3 {
+  font-size: 4rem;
+}
+
+h3.small,
+.h3.small {
+  font-size: 3rem;
+}
+
+h4,
+.h4 {
+  font-size: 3.6rem;
+}
+
+h4.small,
+.h4.small {
+  font-size: 28px;
+}
+
+h5,
+.h5 {
+  font-size: 26px;
+}
+
+h5.small,
+.h5.small {
+  font-size: 24px;
+}
+
+h6,
+.h6 {
+  font-size: 22px;
+}
+
+p,
+.p {
+  font-size: 20px;
+}
+
+.p-sm {
+  font-size: 18px;
+}
+
+.p-xs {
+  font-size: 16px;
+}
+
+.p-xxs {
+  font-size: 14px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.section-title {
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1420px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1544px;
+  }
+}
+
+@media (max-width: 1799px) {
+  :root {
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 1699px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1599px) {
+  :root {
+    font-size: 8.5px;
+  }
+
+  h4.small,
+  .h4.small {
+    font-size: 26px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 24px;
+  }
+
+  h5.small,
+  .h5.small {
+    font-size: 22px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 20px;
+  }
+
+  .p-sm {
+    font-size: 16px;
+  }
+
+  .p-xs {
+    font-size: 14px;
+  }
+
+  p,
+  .p {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1499px) {
+  :root {
+    font-size: 8px;
+  }
+
+  p,
+  .p {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 1399px) {
+  :root {
+    font-size: 7.5px;
+  }
+
+  p,
+  .p {
+    font-size: 15px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  h4.small,
+  .h4.small {
+    font-size: 24px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 22px;
+  }
+
+  h5.small,
+  .h5.small {
+    font-size: 20px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 18px;
+  }
+
+  p,
+  .p {
+    font-size: 16px;
+  }
+
+  .p-sm {
+    font-size: 14px;
+  }
+
+
+}
+
+@media (max-width: 1299px) {
+
+  :root {
+    font-size: 6px;
+  }
+
+}
+
+@media (max-width: 1199px) {
+
+  h4.small,
+  .h4.small {
+    font-size: 22px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+
+  h5.small,
+  .h5.small {
+    font-size: 18px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+
+  p,
+  .p {
+    font-size: 14px;
+  }
+
+  .p-sm {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    font-size: 5px;
+  }
+
+  h4.small,
+  .h4.small {
+    font-size: 20px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 18px;
+  }
+
+  h5.small,
+  .h5.small {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    font-size: 4px;
+  }
+
+  h4.small,
+  .h4.small {
+    font-size: 18px;
+  }
+
+  .header-spacing {
+    padding-top: 80px;
+  }
+
+}

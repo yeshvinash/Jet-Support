@@ -1,0 +1,371 @@
+.services-card {
+    padding: 4rem;
+    width: 100%;
+    overflow: hidden;
+    min-height: 521px;
+    max-height: 521px;
+    position: relative;
+}
+
+.services-card::after {
+    width: 394px;
+    height: 394px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: 0;
+}
+
+.services-card-lists {
+    height: 25rem;
+    position: relative;
+    z-index: 3;
+}
+
+.services-card-lists .services-card-list {
+    margin-bottom: 22px;
+    font-size: 22px;
+    line-height: 1;
+    width: 50%;
+}
+
+.services-card-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 21.5rem;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.services-card-img.small {
+    max-width: 17rem;
+}
+
+
+/* .services-card-img::after {
+    width: 394px;
+    height: 394px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: 1;
+} */
+
+.services-card-btn,
+.services-card-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* .bg-offcyan .services-card-img::after {
+    background: rgba(98, 208, 210, 0.8);
+    filter: blur(70px);
+}
+
+.bg-orange .services-card-img::after {
+    background: rgba(235, 207, 105, 0.52);
+    filter: blur(90px);
+}
+
+.bg-offorange .services-card-img::after {
+    background: #EF8969;
+    filter: blur(90px);
+}
+
+.bg-green .services-card-img::after {
+    background: rgba(189, 247, 52, 0.38);
+    filter: blur(90px);
+}
+
+.bg-offblue .services-card-img::after {
+    background: rgba(80, 172, 224, 0.7);
+    filter: blur(70px);
+}
+
+.bg-gray .services-card-img::after {
+    background: rgba(255, 255, 255, 0.3);
+    filter: blur(90px);
+}
+
+.bg-blue .services-card-img::after {
+    background: rgba(127, 153, 245, 0.7);
+    filter: blur(90px);
+} */
+
+.services-card .button {
+    padding: 14px 23px;
+    min-height: 60px;
+}
+
+.services-offcyan.services-card::after {
+    background: rgba(98, 208, 210, 0.8);
+    filter: blur(70px);
+}
+
+.services-offcyan {
+    background-color: #35B1B4;
+}
+
+.services-orange.services-card::after {
+    background: rgba(235, 207, 105, 0.52);
+    filter: blur(90px);
+}
+
+.services-orange {
+    background-color: #D78305;
+}
+
+.services-offorange.services-card::after {
+    background: #EF8969;
+    filter: blur(90px);
+}
+
+.services-offorange {
+    background-color: #BD5F41;
+}
+
+
+.services-green.services-card::after {
+    background: rgba(189, 247, 52, 0.38);
+    filter: blur(90px);
+}
+
+.services-green {
+    background-color: #568828;
+}
+
+.services-offblue.services-card::after {
+    background: rgba(80, 172, 224, 0.7);
+    filter: blur(70px);
+}
+
+.services-offblue {
+    background-color: #3B83B7;
+}
+
+.services-gray.services-card::after {
+    background: rgba(255, 255, 255, 0.3);
+    filter: blur(90px);
+}
+
+.services-gray {
+    background-color: #7B7B7B;
+}
+
+.services-blue.services-card::after {
+    background: rgba(127, 153, 245, 0.7);
+    filter: blur(90px);
+}
+
+.services-bluedark {
+    background-color: #373DA8;
+}
+
+.services-bluedark.services-card::after {
+    background: #656AC7;
+    filter: blur(90px);
+}
+
+.services-blue {
+    background-color: #3B56B6;
+}
+
+.services-offblue.services-card::after {
+    background: rgba(124, 166, 228, 0.6);
+    filter: blur(70px);
+}
+
+.services-offblue {
+    background-color: #467CCE;
+}
+
+.services-red.services-card::after {
+    background: #DD6363;
+    filter: blur(90px);
+}
+
+.services-red {
+    background-color: #B63B3B;
+}
+
+.services-offviolet.services-card::after {
+    background: #8D709F;
+    filter: blur(70px);
+}
+
+.services-offviolet {
+    background-color: #6D597A;
+}
+
+.services-offgray.services-card::after {
+    background: rgba(148, 170, 192, 0.6);
+    filter: blur(90px);
+}
+
+.services-offgray {
+    background: #5F748A;
+}
+
+.services-offnavyblue.services-card::after {
+    background: #688FC0;
+    filter: blur(110px);
+}
+
+.services-offnavyblue {
+    background: #40618C;
+}
+
+
+.services-pink.services-card::after {
+    background: #E981BB;
+    filter: blur(90px);
+}
+
+.services-pink {
+    background-color: #BE5891;
+}
+
+.services-offbluelight.services-card::after {
+    background: rgba(80, 172, 224, 0.7);
+    filter: blur(70px);
+}
+
+.services-offbluelight {
+    background-color: #3B8AB6;
+}
+
+.services-offyellow.services-card::after {
+    background: #EABE54;
+    filter: blur(70px);
+}
+
+.services-offyellow {
+    background-color: #C89D31;
+}
+
+.services-cyan.services-card::after {
+    background: rgba(98, 208, 210, 0.7);
+    filter: blur(66px);
+}
+
+
+.services-cyan {
+    background-color: #00A4AD;
+}
+
+.services-darkyellow.services-card::after {
+    background: #F9D557;
+    filter: blur(66px);
+}
+
+
+.services-darkyellow {
+    background-color: #D0A91F;
+}
+
+.services-redlight.services-card::after {
+    background: #FFAAB0;
+    filter: blur(98px);
+}
+
+
+.services-redlight {
+    background-color: #D3868B;
+}
+
+.services-card-main-title {
+    font-size: 26px;
+}
+
+.services-card-sub-title {
+    font-size: 24px;
+}
+
+@media (max-width:1599px) {
+
+    .services-card .button {
+        padding: 8px 15px;
+        min-height: 42px;
+    }
+
+    .services-card-lists .services-card-list {
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .services-card-main-title {
+        font-size: 24px;
+    }
+
+    .services-card-sub-title {
+        font-size: 22px;
+    }
+
+    .services-card {
+        min-height: 435px;
+        max-height: 435px;
+    }
+}
+
+@media (max-width:1399px) {
+    .services-card {
+        min-height: 415px;
+        max-height: 415px;
+    }
+
+    .services-card-main-title {
+        font-size: 21px;
+    }
+
+    .services-card-sub-title {
+        font-size: 18px;
+    }
+
+    .services-card-lists .services-card-list {
+        margin-bottom: 14px;
+        font-size: 15px;
+    }
+
+    .services-card {
+        min-height: 332px;
+        max-height: 332px;
+    }
+}
+
+@media (max-width:991px) {
+    .services-card-img.small {
+        max-width: 145px;
+    }
+}
+
+@media (max-width:767px) {
+    .services-card-lists {
+        height: 140px;
+    }
+
+    .services-card-lists .services-card-list {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .services-card-img {
+        max-width: 125px;
+    }
+
+
+}
+
+@media (max-width:575px) {
+    .services-card-lists .services-card-list {
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+
+    .services-card {
+        padding: 30px;
+    }
+}

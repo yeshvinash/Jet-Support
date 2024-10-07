@@ -1,0 +1,111 @@
+.how-we-help-wrap {
+  display: flex;
+  background-color: #1d1d1d;
+  margin-top: 8.5rem;
+  flex-wrap: wrap;
+}
+
+.js-help-card {
+  flex: 1;
+  display: flex;
+  padding: 7rem 4rem 0;
+  position: relative;
+}
+
+.js-help-card:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 2px;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.js-help-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 7rem;
+  border-bottom: 4px solid #333435;
+  transition: 0.3s all;
+}
+
+.js-help-card-content {
+  margin-top: auto;
+}
+
+.js-help-card:hover .js-help-card-inner {
+  border-bottom-color: var(--color-accent);
+}
+
+.js-help-card-icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 3.4rem;
+}
+
+.js-help-card-icon svg {
+  max-width: 3.6rem;
+}
+
+.js-help-card-inner h5 {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.js-help-card-inner .js-help-card-btn {
+  margin-top: 4rem;
+  display: inline-flex;
+}
+
+@media (max-width:992px) {
+
+  .js-help-card {
+    flex: unset;
+    width: 50%;
+  }
+
+  .js-help-card:not(:last-child):after {
+    width: 1px;
+  }
+
+  .js-help-card-inner {
+    border-bottom: 1px solid #333435;
+  }
+
+  .how-we-help-wrap .js-help-card:nth-child(even)::after {
+    content: unset;
+  }
+
+}
+
+@media (max-width:575px) {
+
+  .js-help-card {
+    width: 100%;
+  }
+
+  .how-we-help-wrap {
+    flex-direction: column;
+  }
+
+  .js-help-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .js-help-card-icon svg {
+    max-width: 18px;
+  }
+
+  .js-help-card-inner h5 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+}

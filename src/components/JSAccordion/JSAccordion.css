@@ -1,0 +1,105 @@
+.js-accordion .accordion-item,
+.js-accordion .accordion-button:not(.collapsed),
+.js-accordion .accordion-button {
+    background-color: transparent;
+}
+
+.js-accordion .accordion-button:not(.collapsed) {
+    color: white;
+    box-shadow: unset;
+}
+
+.js-accordion .accordion-item {
+    padding: 2.4rem 0;
+    border-bottom: 1px solid #2B354E;
+}
+
+.js-accordion .accordion-body {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 0px 0px 12rem;
+}
+
+.js-accordion .js-accordion-title {
+    padding-left: 50px;
+    line-height: 1.7;
+}
+
+.js-accordion-index {
+    color: rgba(255, 255, 255, 0.2) !important;
+    min-width: 25px;
+}
+
+.js-accordion .accordion-button {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.js-accordion-title-flex {
+    max-width: calc(100% - 4rem);
+    width: 100%
+}
+
+.js-accordion .accordion-button:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: unset;
+}
+
+.js-accordion-drop-icon {
+    min-width: 3.2rem;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+    background-image: url("../../assets/images/icons/add.svg");
+    background-size: contain;
+    background-position: center;
+}
+
+.js-accordion .accordion-button:not(.collapsed) .js-accordion-drop-icon {
+    background-image: url("../../assets/images/icons/minus.svg");
+}
+
+.js-accordion .accordion-button::after {
+    display: none;
+}
+
+.description-wrapper {
+    position: relative;
+    padding-left: 30px;
+}
+
+.description-wrapper::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: calc(100% - 2.2rem);
+    border-radius: 20px;
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+}
+
+.js-accordion-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width:991px) {
+
+    .js-accordion .js-accordion-title {
+        padding-left: 20px;
+    }
+
+    .description-wrapper {
+        padding-left: 20px;
+    }
+
+    .js-accordion .accordion-body {
+        padding: 12px 0px 0px 20px;
+    }
+}

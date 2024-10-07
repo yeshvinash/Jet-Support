@@ -1,0 +1,41 @@
+.js-swipper {
+    margin-bottom: 103px;
+}
+
+.js-swipper-description {
+    line-height: 1.7;
+}
+
+.js-prev,
+.js-next {
+    width: 5.7rem;
+    height: 5.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgba(243, 245, 247, 0.16);
+    border-radius: 50%;
+    transition: 0.3s all;
+}
+
+.js-prev:hover,
+.js-next:hover {
+    background-color: #558AFB;
+    border-color: #558AFB;
+}
+
+.js-prev.swiper-button-disabled:hover,
+.js-next.swiper-button-disabled:hover,
+.js-prev.swiper-button-disabled,
+.js-next.swiper-button-disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color: gray;
+    border-color: gray;
+}
+
+.js-prev svg {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,35 @@
+.stand-out-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.stand-out-card {
+    padding: 5rem;
+    background: #233050;
+}
+
+.stand-out-icon {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.stand-out-icon svg,
+.stand-out-icon img {
+    object-fit: contain;
+    max-width: 3.2rem;
+}
+
+@media (max-width:575px) {
+
+    .stand-out-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

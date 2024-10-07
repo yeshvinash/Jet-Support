@@ -1,0 +1,108 @@
+.custom-tabbing .nav-pills .nav-link.active,
+.custom-tabbing .nav-pills .show>.nav-link {
+    background-color: transparent;
+}
+
+.custom-tabbing .nav-link:focus,
+.custom-tabbing .nav-link:hover,
+.custom-tabbing .nav-link.active {
+    color: white;
+}
+
+.custom-tabbing .nav-link {
+    color: rgb(240 240 240 / 48%);
+    position: relative;
+    min-height: 7.5rem;
+    padding-right: 4.8rem;
+}
+
+.custom-tabbing .nav-pills .nav-item {
+    margin-bottom: 10px;
+}
+
+.custom-tabbing .nav-pills .nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.custom-tabbing .nav-pills .nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(216, 222, 231, 0.12);
+    height: 100%;
+    width: 5px;
+    border-radius: 3.2rem;
+    transition: 0.3s all;
+}
+
+.custom-tabbing .nav-pills .active.nav-link::after {
+    background-color: #558AFB;
+}
+
+.custom-tabbing .nav-img {
+    max-width: 4.8rem;
+    object-fit: contain;
+    opacity: 0.6;
+    transition: 0.3s all;
+}
+
+.custom-tabbing .active.nav-link .nav-img {
+    opacity: 1;
+}
+
+.custom-tabbing .nav-pills {
+    padding-right: 9rem;
+}
+
+.custom-tab-description {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.custom-tab-title {
+    font-size: 22px;
+}
+
+.custom-tab-description {
+    font-size: 2.4rem;
+}
+
+.custom-tab-title {
+    font-size: 22px;
+}
+
+.custom-tab-description {
+    font-size: 2.4rem;
+}
+
+.custom-tabbing.md .custom-tab-title {
+    font-size: 3rem;
+}
+
+.custom-tabbing.md .custom-tab-description {
+    font-size: 2.4rem;
+}
+
+.custom-tabbing.md .step-number {
+    font-size: 3.8rem;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+}
+
+.custom-tabbing.md .custom-tabbing .nav-pills {
+    padding-right: 7rem;
+}
+
+@media screen and (max-width:1399px) {
+    .custom-tab-description {
+        font-size: 16px;
+    }
+
+    .custom-tab-title {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:768px) {}

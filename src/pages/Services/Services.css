@@ -1,0 +1,275 @@
+.dev-process-title {
+  padding-left: 4.5rem;
+}
+
+.technology-services-flex {
+  display: flex;
+}
+
+.technology-services-col-1 {
+  width: 33.33%;
+}
+
+.technology-services-col-2 {
+  width: calc(100% - 33.33%);
+}
+
+.technology-services-grid {
+  display: flex;
+}
+
+.technology-services-grid .services-card,
+.technology-services-col-1 .services-card {
+  margin-bottom: 40px;
+}
+
+.technology-services-grid .services-card:last-child,
+.technology-services-col-1 .services-card:last-child {
+  margin-bottom: 0px;
+}
+
+
+.technology-services-col {
+  flex: 1 0 0%;
+}
+
+.custom-row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.custom-col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.technology-services-main-title {
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+}
+
+.technology-services-main-title.QA-technology-services-main-title {
+  margin-right: 5rem;
+  margin-left: 0;
+}
+
+.custom-col-spacing {
+  margin-top: 10rem;
+}
+
+.faq-description-wrapper .faq-description {
+  margin-bottom: 5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.faq-description-wrapper .faq-description:last-child {
+  margin-bottom: 0;
+}
+
+.faq-content {
+  padding-right: 12rem;
+}
+
+.development-services-card-grid {
+  display: grid;
+  gap: 4.8rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .development-services-title {
+  max-width: 92.7rem;
+} */
+
+.development-services-description {
+  max-width: 60%;
+}
+
+.development-services-card-2 {
+  margin-top: 10rem;
+}
+
+.development-services-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.development-services-col .services-card {
+  margin-bottom: 4.8rem;
+}
+
+.development-services-col .services-card:last-child {
+  margin-bottom: 0;
+}
+
+.dev-ops-technologies-title {
+  max-width: 106rem;
+}
+
+.dev-ops-technologies-description {
+  max-width: 82.6rem;
+}
+
+@media (max-width:1399px) {
+  .custom-col {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .custom-row {
+    margin-left: -13px;
+    margin-right: -13px;
+  }
+
+  .technology-services-grid .services-card,
+  .technology-services-col-1 .services-card {
+    margin-bottom: 26px;
+  }
+
+}
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {
+  .faq-content {
+    padding-right: 20px;
+  }
+
+  .js-accordion-drop-icon {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .technology-services-flex {
+    flex-direction: column;
+  }
+
+  .technology-services-col-1 {
+    width: 100%;
+  }
+
+  .technology-services-col-flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .technology-services-col-2 {
+    width: 100%;
+  }
+
+  .services-card-lists {
+    height: 175px;
+  }
+
+  .custom-col-spacing {
+    margin-top: 0;
+  }
+
+  .custom-col {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .custom-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .technology-services-col-flex {
+    gap: 16px;
+  }
+
+  .technology-services-grid .services-card,
+  .technology-services-col-1 .services-card {
+    margin-bottom: 16px;
+  }
+
+  .technology-services-md-col {
+    display: flex;
+    gap: 16px;
+  }
+
+  .technology-services-md {
+    gap: 16px 0;
+  }
+
+  .development-services-card-2 {
+    margin-top: 0;
+  }
+
+  .development-services-card-grid {
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .development-services-col {
+    flex-direction: row;
+    gap: 0 16px;
+  }
+
+  .development-services-col .services-card {
+    margin-bottom: 0;
+  }
+
+  .development-services-description {
+    max-width: 80%;
+  }
+
+  .development-services-card-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .development-services-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .faq-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .js-accordion .accordion-body {
+    padding: 12px 0px 0px 0px;
+  }
+
+  .technology-services-grid,
+  .technology-services-col-flex {
+    flex-direction: column;
+
+  }
+
+  .technology-services-grid .services-card,
+  .technology-services-col-1 .services-card {
+    margin-bottom: 0;
+  }
+
+  .technology-services-grid,
+  .technology-services-col-flex,
+  .technology-services-flex,
+  .technology-services-col {
+    gap: 20px 0;
+  }
+
+  .technology-services-md-col,
+  .technology-services-col {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .services-card-img.small {
+    max-width: 110px;
+  }
+
+  .development-services-col {
+    flex-direction: column;
+    gap: 16px 0;
+  }
+
+  .development-services-card-grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}

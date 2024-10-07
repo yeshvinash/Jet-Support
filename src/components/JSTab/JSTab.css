@@ -1,0 +1,38 @@
+.JS-tabbing .nav-pills .nav-link.active,
+.JS-tabbing .nav-pills .show>.nav-link {
+    background-color: transparent;
+}
+
+.JS-tabbing .nav-link:focus,
+.JS-tabbing .nav-link:hover,
+.JS-tabbing .nav-link.active {
+    color: white;
+}
+
+.JS-tabbing .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    line-height: 1.5;
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.JS-tabbing .nav-pills .nav-item:first-child {
+    padding-top: 0;
+}
+
+.JS-tabbing .nav-pills .nav-item {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.JS-tabbing .nav-pills .nav-item:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.custom-tab-description {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9) !important;
+}

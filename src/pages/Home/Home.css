@@ -1,0 +1,342 @@
+.wave-background {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wave-background::before,
+.wave-background::after {
+  content: "";
+  position: absolute;
+  /* width: 50%; */
+  /* height: 84rem; */
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation-name: waveWidth;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.wave-background::before {
+  left: 0;
+  background-image: url(./../../assets/images/wave-left.png);
+}
+
+.wave-background::after {
+  right: 0;
+  background-image: url(./../../assets/images/wave-right.png);
+}
+
+@keyframes waveWidth {
+  0% {
+    width: 30%;
+    height: 50rem;
+  }
+
+  100% {
+    width: 50%;
+    height: 84rem;
+  }
+}
+
+.banner-content {
+  padding: 6rem 0;
+  max-width: 55%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero-apps {
+  position: relative;
+  z-index: 1;
+  background-color: #1c1c1c;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 5rem 0;
+}
+
+.hero-app-awards {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-app-main {
+  max-width: 60%;
+  height: auto;
+}
+
+.android-award {
+  left: 5%;
+  bottom: 20%;
+  width: 220px;
+}
+
+.team-award {
+  right: 4%;
+  top: 5%;
+  width: 320px;
+}
+
+.hero-app-awards img {
+  margin-right: 10px;
+}
+
+.hero-app-awards p {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.hero-app-awards p::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  background-color: #4f6bbe;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 10px;
+}
+
+.extension-content {
+  margin-bottom: 9rem;
+}
+
+.extension-title {
+  max-width: 71.3rem;
+}
+
+.extension-description {
+  max-width: 67.7rem;
+}
+
+.extension-swipper-slider .swiper-pagination {
+  position: relative;
+}
+
+.extension-swipper-slider .swiper-pagination-bullet {
+  min-width: 7.5rem;
+  border: 0;
+  border-radius: 3.2rem;
+  background-color: rgba(216, 222, 231, 0.7);
+  transition: 0.5s all;
+  min-height: 8px;
+}
+
+.extension-swipper-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #558afb;
+}
+
+/* background: #558AFB; */
+
+.extension-swipper-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #558afb;
+  min-width: 24rem;
+}
+
+.extension-swipper-slider .swiper-wrapper {
+  margin-bottom: 7rem;
+}
+
+.extension-swipper-slider .swiper-pagination {
+  text-align: left;
+}
+
+.client-testimonials {
+  padding-bottom: 50rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+  margin-top: 8rem;
+}
+
+.award-winning-team {
+  margin-top: -20%;
+}
+
+.award-winning-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+
+.award-winning-team-img {
+  position: relative;
+  padding-bottom: 106%;
+  margin-bottom: 4.6rem;
+}
+
+.award-winning-team-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.choosing-app-description {
+  max-width: 110rem;
+  margin: 0px auto;
+}
+
+.client-logo {
+  opacity: 0.5;
+  transition: 0.3s all;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 0px 5rem;
+}
+
+.client-logo:hover {
+  opacity: 1;
+}
+
+.client-swipper-slider .swiper-wrapper {
+  align-items: center;
+}
+
+.client-swipper-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.client-swipper-slider .swiper-slide::after {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 4.8rem);
+  transform: translate(100%, -50%);
+  width: 4.8rem;
+  height: 4.8rem;
+  content: "";
+  background-image: url("../../assets/images/icons/star.svg");
+  background-size: contain;
+}
+
+/* Responsive media query */
+
+@media (max-width:1399px) {
+  .hero-app-awards.android-award img {
+    object-fit: contain;
+    max-width: 50px;
+    max-height: 40px;
+  }
+
+  .hero-app-awards img {
+    max-width: 80px;
+    max-height: 40px;
+  }
+}
+
+@media (max-width:991px) {
+
+  .extension-title {
+    margin-bottom: 8px;
+  }
+
+  .extension-title,
+  .extension-description {
+    max-width: 100%;
+  }
+
+  .android-award {
+    left: 0;
+    width: 29%;
+  }
+
+  .team-award {
+    right: 0;
+    width: 35%;
+  }
+}
+
+@media (max-width:767px) {
+  .award-winning-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .choosing-app-description {
+    max-width: 100%;
+  }
+
+
+  .hero-app-awards {
+    position: relative;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .home-hero-apps {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+  }
+
+  .hero-app-main {
+    max-width: 80%;
+    margin: 15px auto 0;
+    order: 1;
+  }
+
+  .items-flow-content {
+    font-size: 13px;
+  }
+}
+
+@media (max-width:575px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .award-winning-team-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 6rem;
+  }
+
+  .award-winning-team {
+    margin-top: -34%;
+  }
+
+  .hero-app-main {
+    max-width: 100%;
+  }
+
+  .team-number-wrap {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .hero-app-awards p {
+    padding-left: 0px;
+  }
+
+  .hero-app-awards p::before {
+    display: none;
+  }
+}
+
+@media (max-width:414px) {
+  .hero-app-awards img {
+    max-width: 100%;
+    max-height: 30px;
+  }
+
+  .hero-app-awards.android-award img {
+    max-width: 100%;
+    max-height: 35px;
+  }
+}

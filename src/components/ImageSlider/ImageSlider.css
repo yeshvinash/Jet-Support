@@ -1,0 +1,40 @@
+.img-slider-wrapper {
+    overflow-x: hidden;
+}
+
+.img-slider.swiper {
+    overflow: visible;
+}
+
+.img-slider .swiper-slide {
+    background: rgba(94, 94, 94, 0.16);
+    height: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-slider .swiper-slide img {
+    object-fit: contain;
+    max-width: 100%;
+    max-width: 23.8rem;
+    display: block;
+    opacity: 0.5;
+    transition: 0.3s all;
+}
+
+
+.img-slider .swiper-slide:hover img {
+    opacity: 1;
+}
+
+.img-slider .swiper-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+@media screen and (max-width:575px) {}

@@ -1,0 +1,40 @@
+/* .ios-app-development-title {
+    max-width: 106rem;
+} */
+
+.ios-app-development-description {
+    max-width: 60%;
+}
+
+.ios-app-developement-wrap .custom-lists.grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.ios-app-help-wrap .section-title {
+    max-width: 74%;
+    margin: 0 auto;
+}
+
+.ios-app-help-wrap .section-title p {
+    max-width: 71%;
+    margin: 0 auto;
+}
+
+/* Responsive media query */
+@media (max-width:991px) {
+
+    .ios-app-development-description,
+    .ios-app-help-wrap .section-title,
+    .ios-app-help-wrap .section-title p {
+        max-width: 80%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .ios-app-development-description,
+    .ios-app-help-wrap .section-title,
+    .ios-app-help-wrap .section-title p {
+        max-width: 100%;
+    }
+}
